@@ -1,6 +1,8 @@
 package br.com.natcorpbr.batidaPonto;
 
 import br.com.natcorpbr.batidaPonto.service.BatidaPontoService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -12,12 +14,23 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling // Habilita o Scheduler do Spring Boot
 public class BatidaPontoApplication {
 
+	private static final Logger logger = LoggerFactory.getLogger(BatidaPontoApplication.class);
+
 	public static void main(String[] args) {
 
-		ApplicationContext context = SpringApplication.run(BatidaPontoApplication.class, args);
 
-		BatidaPontoService service = context.getBean(BatidaPontoService.class);
-		service.baterPonto();
+		logger.info("🔵 Aplicação iniciando...");
+
+		try {
+			ApplicationContext context = SpringApplication.run(BatidaPontoApplication.class, args);
+			logger.info("Aplicação em execução!");
+
+			BatidaPontoService service = context.getBean(BatidaPontoService.class);
+			service.baterPonto();
+		} catch (Exception e) {
+			logger.error("Erro ao iniciar a aplicação!", e);
+		}
+
 	}
 
 }
