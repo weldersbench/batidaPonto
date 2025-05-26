@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 
 public class LoggerPonto {
 
-    private static final String LOG_FILE = "logsBP/marcação_ponto_log.txt";
+    private static final String LOG_FILE = "logsBP/marcacao_ponto_log.txt";
 
     public static void registraPonto(String mensagem) throws IOException{
         try{

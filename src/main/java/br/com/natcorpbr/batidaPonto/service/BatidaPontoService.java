@@ -22,21 +22,22 @@ public class BatidaPontoService {
     public void baterPonto(){
         logger.info("Iniciando processo de batida de ponto...");
 
+        // Atualiza o chromeDriver
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--start-maximized");
 
         WebDriver driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         try {
             driver.get("https://www.natcorpbr.com.br/apex/rh/f?p=307:LOGIN_DESKTOP:12978665965806:::::&tz=-3:00");
 
-            logger.info("Url atual: " + driver.getCurrentUrl());
+            logger.info("Url pagina inicial: " + driver.getCurrentUrl());
 
             WebElement selectElement = driver.findElement(By.id("P900_COD_EMPRESA"));
             Select select = new Select(selectElement);
@@ -48,7 +49,10 @@ public class BatidaPontoService {
             driver.findElement(By.id("P900_SENHA")).click();
             driver.findElement(By.id("P900_SENHA")).sendKeys("37734915817");
 
-            driver.findElement(By.cssSelector("button.t-Button.t-Button--hot")).click();
+
+            WebElement button = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button.t-Button.t-Button--hot")));
+            button.click();
+
             logger.info("Tentando realizar login...");
 
             boolean loginSuccess = wait.until(ExpectedConditions.urlContains("f?p=307:1:"));
@@ -64,6 +68,7 @@ public class BatidaPontoService {
 
             String mensagem = null;
             try {
+
                 WebElement iframe = wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("iframe")));
                 driver.switchTo().frame(1);
 
@@ -91,7 +96,7 @@ public class BatidaPontoService {
             LoggerPonto.registraPonto(mensagem);
 
         } catch (TimeoutException e) {
-            logger.error("Erro: O botão não foi encontrado ou não está visível.", e);
+            logger.error("Erro: O botao não foi encontrado ou não está visível.", e);
             System.out.println("Erro durante o teste: " + e.getMessage());
         } catch (IOException e) {
             logger.error("ERRO: Falha ao registrar o ponto! ", e);

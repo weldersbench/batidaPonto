@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'br.com.natcorpbr'
-version = '0.0.4-SNAPSHOT'
+version = '1.0.2-SNAPSHOT'
 
 java {
 	toolchain {
