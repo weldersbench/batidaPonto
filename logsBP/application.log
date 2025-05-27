@@ -1,58 +1,28 @@
-2025-05-16 14:08:47 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Starting BatidaPontoApplication using Java 17 with PID 21324 (C:\Users\leandro.nunes\IdeaProjects\batidaPonto\build\classes\java\main started by leandro.nunes in C:\Users\leandro.nunes\IdeaProjects\batidaPonto)
-2025-05-16 14:08:47 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-16 14:08:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-16 14:08:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-16 14:08:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-05-16 14:08:49 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-05-16 14:08:49 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-16 14:08:49 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-05-16 14:08:49 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-16 14:08:49 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2612 ms
-2025-05-16 14:08:50 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-05-16 14:08:50 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-05-16 14:08:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-05-16 14:08:51 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Started BatidaPontoApplication in 5.061 seconds (process running for 5.972)
-2025-05-16 14:08:51 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Aplicação em execução!
-2025-05-16 14:08:51 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Iniciando processo de batida de ponto...
-2025-05-16 14:08:52 [restartedMain] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.94 (resolved driver for Chrome 136)
-2025-05-16 14:08:52 [restartedMain] INFO  i.g.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.94/win64/chromedriver-win64.zip
-2025-05-16 14:08:53 [restartedMain] INFO  i.g.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win64.zip
-2025-05-16 14:08:54 [restartedMain] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\leandro.nunes\.cache\selenium\chromedriver\win64\136.0.7103.94\chromedriver.exe
-2025-05-16 14:08:57 [restartedMain] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find CDP implementation matching 136
-2025-05-16 14:08:57 [restartedMain] WARN  o.o.selenium.chromium.ChromiumDriver - Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-2025-05-16 14:08:58 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Url pagina inicial: https://www.natcorpbr.com.br/apex/rh/f?p=307:LOGIN_DESKTOP:13157655495865:::::
-2025-05-16 14:09:00 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Tentando realizar login...
-2025-05-16 14:09:01 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Login realizado com sucesso!
-2025-05-16 14:09:02 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Marcando Ponto...
-2025-05-16 14:09:03 [restartedMain] WARN  b.c.n.b.service.BatidaPontoService - Mensagem diferente do esperado: Marcação Realizada com Sucesso! 16/05/2025 14:09:03
-2025-05-16 14:09:04 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Processo Finalizado.
-2025-05-16 14:09:04 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-16 14:09:04 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-05-16 17:03:35 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Starting BatidaPontoApplication using Java 17 with PID 18008 (C:\Users\leandro.nunes\IdeaProjects\batidaPonto\build\classes\java\main started by leandro.nunes in C:\Users\leandro.nunes\IdeaProjects\batidaPonto)
-2025-05-16 17:03:35 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-05-16 17:03:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-16 17:03:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-16 17:03:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-05-16 17:03:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-05-16 17:03:38 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-05-16 17:03:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-05-16 17:03:38 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-05-16 17:03:38 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2535 ms
-2025-05-16 17:03:39 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-05-16 17:03:39 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-05-16 17:03:39 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-05-16 17:03:39 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Started BatidaPontoApplication in 4.852 seconds (process running for 5.581)
-2025-05-16 17:03:39 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Aplicação em execução!
-2025-05-16 17:03:39 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Iniciando processo de batida de ponto...
-2025-05-16 17:03:40 [restartedMain] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.94 (resolved driver for Chrome 136)
-2025-05-16 17:03:40 [restartedMain] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\leandro.nunes\.cache\selenium\chromedriver\win64\136.0.7103.94\chromedriver.exe
-2025-05-16 17:03:43 [restartedMain] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find CDP implementation matching 136
-2025-05-16 17:03:43 [restartedMain] WARN  o.o.selenium.chromium.ChromiumDriver - Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-2025-05-16 17:03:45 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Url pagina inicial: https://www.natcorpbr.com.br/apex/rh/f?p=307:LOGIN_DESKTOP:2629703177685:::::
-2025-05-16 17:03:46 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Tentando realizar login...
-2025-05-16 17:03:46 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Login realizado com sucesso!
-2025-05-16 17:03:48 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Marcando Ponto...
-2025-05-16 17:03:49 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Mensagem Confirmada: Marcação Realizada com Sucesso! 16/05/2025 17:03:49
-2025-05-16 17:03:49 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Processo Finalizado.
-2025-05-16 17:03:49 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-16 17:03:50 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-27 13:01:43 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Starting BatidaPontoApplication using Java 17 with PID 21828 (C:\Users\leandro.nunes\IdeaProjects\batidaPonto\build\classes\java\main started by leandro.nunes in C:\Users\leandro.nunes\IdeaProjects\batidaPonto)
+2025-05-27 13:01:43 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 13:01:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-27 13:01:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-27 13:01:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-27 13:01:46 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-27 13:01:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-27 13:01:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-27 13:01:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-27 13:01:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3059 ms
+2025-05-27 13:01:48 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-27 13:01:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-27 13:01:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-27 13:01:48 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Started BatidaPontoApplication in 5.87 seconds (process running for 7.031)
+2025-05-27 13:01:48 [restartedMain] INFO  b.c.n.b.BatidaPontoApplication - Aplicação em execução!
+2025-05-27 13:01:48 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Iniciando processo de batida de ponto...
+2025-05-27 13:01:49 [restartedMain] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 136.0.7103.113 (resolved driver for Chrome 136)
+2025-05-27 13:01:49 [restartedMain] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\leandro.nunes\.cache\selenium\chromedriver\win64\136.0.7103.113\chromedriver.exe
+2025-05-27 13:01:52 [restartedMain] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find CDP implementation matching 136
+2025-05-27 13:01:52 [restartedMain] WARN  o.o.selenium.chromium.ChromiumDriver - Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-27 13:01:54 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Url pagina inicial: https://www.natcorpbr.com.br/apex/rh/f?p=307:LOGIN_DESKTOP:12925512637369:::::
+2025-05-27 13:01:58 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Tentando realizar login...
+2025-05-27 13:01:58 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Login realizado com sucesso!
+2025-05-27 13:01:59 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Marcando Ponto...
+2025-05-27 13:02:01 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Mensagem Confirmada: Marcação Realizada com Sucesso! 27/05/2025 13:02:00
+2025-05-27 13:02:01 [restartedMain] INFO  b.c.n.b.service.BatidaPontoService - Processo Finalizado.
+2025-05-27 13:02:01 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-27 13:02:02 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
